@@ -33,8 +33,10 @@ body{
     align-items: center;
     text-align: center;
     padding: 5px 0px;
-    margin-top: 50px;
+    margin-top: 40px;
     width: 100%;
+    position: relative;
+    bottom: -17px;
   }
   
   #rodape h1{

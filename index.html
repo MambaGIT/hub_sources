@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Central das Sources</title>
+	<style>
+		.row {
+			display: flex;
+			flex-wrap: wrap;
+			margin: 0 -15px;
+		}
+		.card {
+			background-color: #ffffff;
+			flex: 1;
+			margin: 15px;
+			border: 1px solid #ddd;
+			border-radius: 15px;
+			box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+			overflow: hidden;
+		}
+		.card img {
+			width: 100%;
+			height: 200px;
+			object-fit: cover;
+		}
+		.card-content {
+			padding: 15px;
+		}
+		.card-title {
+			margin: 0;
+			font-size: 20px;
+			font-weight: 600;
+		}
+		.card-description {
+			margin: 10px 0;
+			font-size: 16px;
+			line-height: 1.4;
+		}
+		.card-link {
+			display: block;
+			margin-top: 10px;
+			color: #007bff;
+			text-decoration: none;
+		}
+		.card-link:hover {
+			text-decoration: underline;
+		}
+		@media screen and (max-width: 768px) {
+			.card {
+				flex-basis: calc(50% - 30px);
+			}
+		}
+		@media screen and (max-width: 576px) {
+			.card {
+				flex-basis: calc(100% - 30px);
+			}
+		}
+	</style>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="vanilla-tilt.min.js">    
+</head>
+<body>
+	<div id="div_titulo">
+		<h1 id="titulo">CENTRAL DAS SOURCES</h1>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="card">
+				<a href="https://metodo12p.com.br/yt/" target="_blank">
+					<img src="yt.png" alt="Imagem 2">
+					<div class="card-content">
+						<h2 class="card-title">Youtube</h2>
+						<p class="card-description"> Usar quando o cliente entrar em contato via Youtube</p>
+					</div>
+				</a>
+			</div>
+			<div class="card">
+				<a href="https://metodo12p.com.br" target="_blank">
+					<img src="google.png" alt="Imagem 2">
+					<div class="card-content">
+						<h2 class="card-title">Organic</h2>
+						<p class="card-description">Usar para Leads Orgânicas, pessoas que pesquisaram no Google sobre Metodo 12P</p>
+					</div>
+				</a>
+			</div>
+			<div class="card">
+				<a href="https://metodo12p.com.br/wpp/" target="_blank">
+					<img src="wpp.png" alt="Imagem 2">
+					<div class="card-content">
+						<h2 class="card-title">Whatsapp</h2>
+						<p class="card-description"> Usar quando o cliente entrar em contato via Whatsapp</p>
+					</div>
+				</a>
+			</div>
+
+			<div class="card">
+				<a href="https://metodo12p.com.br/comunidade/" target="_blank">
+					<img src="comunidade.png" alt="Imagem 2">
+					<div class="card-content">
+						<h2 class="card-title">Comunidade 12P</h2>
+						<p class="card-description">Usar para clientes vindos da comunidade 12P</p>
+					</div>
+				</a>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="card">
+				<a href="https://metodo12p.com.br/ig-mn/" target="_blank">
+					<img src="many.png" alt="Imagem 2">
+					<div class="card-content">
+						<h2 class="card-title">Manychat</h2>
+						<p class="card-description">O Bot usa esse para se comunicar pela plataforma ManyChat</p>
+					</div>
+				</a>
+			</div>
+			<div class="card">
+				<a href="https://metodo12p.com.br/ig-bio/" target="_blank">
+					<img src="bio.png" alt="Imagem 2">
+					<div class="card-content">
+						<h2 class="card-title">Link da Bio</h2>
+						<p class="card-description">Link que fica no perfil do Instagram da 12P</p>
+					</div>
+				</a>
+			</div>
+			<div class="card">
+				<a href="https://metodo12p.com.br/ig-dm/" target="_blank">
+					<img src="dm.png" alt="Imagem 2">
+					<div class="card-content">
+						<h2 class="card-title">Direct do Instagram</h2>
+						<p class="card-description">Usar quando o cliente chamar no Direct do Instagram</p>
+					</div>
+				</a>
+			</div>
+			<div class="card">
+				<a href="https://metodo12p.com.br/ig-st/" target="_blank">
+					<img src="st.png" alt="Imagem 2">
+					<div class="card-content">
+						<h2 class="card-title">Link Stories</h2>
+						<p class="card-description">Link que fica no "Saiba Mais" dos Stories do instagram (exceto os patrocinados)</p>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<div id="rodape">
+		<h1> Método 12P - todos os direitos reservados</h1>
+	</div>
+    <script type="text/javascript" src="vanilla-tilt.min.js"></script>
+    <script>
+		VanillaTilt.init(document.querySelectorAll(".card"),{
+		max: 25,
+		speed: 400,
+		glare: true,
+		"max-glare": 1,
+		});
+	</script>
+</body>

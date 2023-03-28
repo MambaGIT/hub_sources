@@ -1,0 +1,43 @@
+*{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+body{
+    background-image: url(https://raw.githubusercontent.com/MambaGIT/accounts/main/mini%20bg%2012p.jpg);
+}
+
+.container{
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+#titulo{
+    color: white;
+    font-size: 50px;
+}
+
+#div_titulo{
+    margin-top: 50px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+#rodape{
+    background-color: #0D0D0D;
+    min-height: 30px;
+    align-items: center;
+    text-align: center;
+    padding: 5px 0px;
+    margin-top: 50px;
+    width: 100%;
+  }
+  
+  #rodape h1{
+    font-size: 20px;
+    color: #ffcc00b1;
+  }

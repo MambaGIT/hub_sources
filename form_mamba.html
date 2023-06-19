@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-image: url('https://mambadigital.com.br/wp-content/uploads/2023/02/background-hero-2.png');">
+    <div style="
+        width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+    ">
+        <form action="https://mambadigital.com.br/processando.php" method="post"
+    id="myForm"
+
+    style="
+    font-family: 'Poppins', Sans-serif;
+    color:#FFCE05;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 400;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;">
+
+    <input type="hidden" name="campaign" id="campaign">
+    <input type="hidden" name="source" id="source">
+        <script>
+            // CAMPAIGN
+            const urlParams = new URLSearchParams(window.location.search);
+            const valor_campaign = urlParams.get("utm_source");
+            document.getElementById("campaign").value = valor_campaign;
+
+            // SOURCE
+            const urlParams2 = new URLSearchParams(window.location.search);
+            const valor_source = urlParams2.get("o");
+
+            source =  "383"
+            ////////////////////////////////////////////////////
+            if(valor_source == "FB"           || valor_source == "fb"           ) { source = "379"; } 
+            if(valor_source == "FB-INTERESSE" || valor_source == "fb-interesse" ) { source = "375"; } 
+            if(valor_source == "GILMAR"       || valor_source == "gilmar"       ) { source = "371"; } 
+            if(valor_source == "GOOGLE"       || valor_source == "google"       ) { source = "367"; } 
+            if(valor_source == "DM"           || valor_source == "dm"           ) { source = "363"; } 
+            if(valor_source == "BIO"          || valor_source == "bio"          ) { source = "359"; } 
+            if(valor_source == "MN"           || valor_source == "mn"           ) { source = "355"; } 
+            if(valor_source == "ST"           || valor_source == "st"           ) { source = "351"; } 
+            if(valor_source == "WPP"          || valor_source == "wpp"          ) { source = "347"; } 
+            if(valor_source == "YT"           || valor_source == "yt"           ) { source = "343"; } 
+            if(valor_source == "GIL"          || valor_source == "gil"          ) { source = "211"; } 
+            if(valor_source == "CLT"          || valor_source == "clt"          ) { source = "207"; } 
+            if(valor_source == "tiktok"       || valor_source == "TIKTOK"       ) { source = "407"; } 
+            if(valor_source == "dm_fb"        || valor_source == "DM_FB"        ) { source = "411"; } 
+            if(valor_source == "12P"          || valor_source == "12p"          ) { source = "403"; } 
+            if(valor_source == "qint"         || valor_source == "QINT"         ) { source = "23" ; } 
+            ////////////////////////////////////////////////////
+            document.getElementById("source").value = source;
+        </script>
+
+
+        <div>
+            <div style="text-align: start;">
+                <label>Qual o seu nome completo?</label>
+            </div>
+            <div style="margin: 0 auto;">
+                <input style="width: 100%; height: 30px; margin-bottom: 10px;" name="nome" id="nome" required />
+            </div>
+        </div>
+
+        <div class="">
+            <div style="text-align: start;">
+                <label>Qual o seu e-mail?</label>
+            </div>
+            <div>
+                <input style="width: 100%; height: 30px; margin-bottom: 10px;" type="email" name="email" id="email" required/>
+            </div>
+        </div>
+        <div class="">
+            <div style="text-align: start;">
+                <label>Qual seu Whatsapp com DDD?</label>
+            </div>
+            <div>
+                <input style="width: 100%; height: 30px; margin-bottom: 10px;" title="Por favor, insira apenas números e sem espaço" type="text" inputmode="numeric" pattern="[0-9]*" name="telefone" id="telefone" required/>
+            </div>
+        </div>
+        <div class="">
+            <div style="text-align: start;">
+                <label>Em qual empresa você trabalha?</label>
+            </div>
+            <div>
+                <input style="width: 100%; height: 30px;margin-bottom: 10px;" name="empresa" id="empresa" required/>
+            </div>
+        </div>
+        <div class="">
+            <div style="text-align: start;">
+                <label>Qual o seu segmento?</label>
+            </div>
+            <div>
+                <input style="width: 100%; height: 30px; margin-bottom: 10px;" name="produto" id="produto" required/>
+            </div>
+        </div>
+
+        <div style="text-align: start;"> 
+            <label>Você tem quantos funcionários na sua empresa?</label><br>
+            <input style="margin-left: 15px;" type="radio" id="opcao_1" name="funcionario" value="00 - 01" required>
+            <label style="font-size: 16px;" for="menos20k">00 - 01</label><br>
+
+            <input style="margin-left: 15px;" type="radio" id="opcao_2" name="funcionario" value="02 - 10" required>
+            <label style="font-size: 16px;" for="20_70K">02 - 10</label><br>
+
+            <input style="margin-left: 15px;" type="radio" id="opcao_3" name="funcionario" value="11 - 20" required>
+            <label style="font-size: 16px;" for="70_150k">11 - 20</label><br>
+
+            <input style="margin-left: 15px;" type="radio" id="opcao_4" name="funcionario" value="21 - 50" required>
+            <label style="font-size: 16px;" for="mais150k">21 - 50</label><br>
+
+            <input style="margin-left: 15px;  margin-bottom: 30px;" type="radio" id="opcao_5" name="funcionario" value="+50" required>
+            <label style="font-size: 16px;" for="mais150k">+50</label><br>
+        </div>
+
+        <div style="text-align: start;"> 
+            <label>Qual o seu faturamento Mensal?</label><br>
+            <input style="margin-left: 15px;" type="radio" id="opcao_1" name="valor" value="Até 20 mil" required>
+            <label style="font-size: 16px;" for="menos20k">Até 20 mil </label><br>
+
+            <input style="margin-left: 15px;" type="radio" id="opcao_2" name="valor" value="De 21 mil à 70 mil" required>
+            <label style="font-size: 16px;" for="20_70K">De 21 mil à 70 mil</label><br>
+
+            <input style="margin-left: 15px;" type="radio" id="opcao_3" name="valor" value="De 71 mil à 150 mil" required>
+            <label style="font-size: 16px;" for="70_150k">De 71 mil à 150 mil</label><br>
+
+            <input style="margin-left: 15px;" type="radio" id="opcao_4" name="valor" value="De 151 mil à 300 mil" required>
+            <label style="font-size: 16px;" for="mais150k">De 151 mil à 300 mil</label><br>
+
+            <input style="margin-left: 15px;" type="radio" id="opcao_5" name="valor" value="De 301 mil à 500 mil" required>
+            <label style="font-size: 16px;" for="mais150k">De 301 mil à 500 mil</label><br>
+
+            <input style="margin-left: 15px;" type="radio" id="opcao_6" name="valor" value="De 501 mil à 1 milhão" required>
+            <label style="font-size: 16px;" for="mais150k">De 501 mil à 1 milhão</label><br>
+
+            <input style="margin-left: 15px;" type="radio" id="opcao_7" name="valor" value="Mais de 1 milhão" required>
+            <label style="font-size: 16px;" for="mais150k">Mais de 1 milhão</label>
+        </div>
+
+        <button style="margin-top: 15px;
+                    font-family: 'Poppins', Sans-serif;
+                    font-weight: 500;
+                    text-transform: uppercase;
+                    background-color: transparent;
+                    background-image: linear-gradient(180deg, #FFD800 0%, #B28704 100%);
+                    color: white;
+                    border: none;
+                "
+                type="submit" class="" id="botao_envio" onclick="teste()" >Enviar</button>
+        </form> 
+        <script>
+        document.getElementById("myForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+                document.getElementById("botao_envio").style.display = "none"; //apaga o botão
+                var novo_elemento = document.createElement("button");    // cria novo botão
+                novo_elemento.style.backgroundColor =  "#828282";
+                novo_elemento.style.color =  "white";
+                novo_elemento.style.border = "white";
+                novo_elemento.style.margin = "15px 0px 0px 0px";    
+                novo_elemento.textContent = "Enviar";
+                novo_elemento.disabled = true;
+                var elemento_pai = document.getElementById("myForm");  //seleciona div
+                elemento_pai.appendChild(novo_elemento);      // adiciona elemento na DIV
+            this.submit();
+    });
+        </script>
+    </div>
+</body>
+</html>
